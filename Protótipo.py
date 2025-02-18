@@ -1,13 +1,13 @@
 # Definição dos alimentos
-Food = "01. Salgado" 
-Food2 = "02. Twix"
-Food3 = "03. Paçoca"
-Food4 = "04. Bolo de pote"
-Food5 = "05. Bala"
-Food6 = "06. Pão de queijo"
-Food7 = "07. Freegells"
-Food8 = "08. Salgadinho"
-Food9 = "09. Barrinha de cereal"
+Food = "01. Salgado R$8,00" 
+Food2 = "02. Twix R$8,00"
+Food3 = "03. Paçoca R$8,00"
+Food4 = "04. Bolo de pote R$8,00"
+Food5 = "05. Bala R$8,00"
+Food6 = "06. Pão de queijo R$8,00"
+Food7 = "07. Freegells R$8,00"
+Food8 = "08. Salgadinho R$8,00"
+Food9 = "09. Barrinha de cereal R$8,00"
 
 # Definição dos sabores de salgado
 Salgado1 = '1. Frango com catupiry'
@@ -42,6 +42,14 @@ Bebida1 = '1. Guaraná'
 Bebida2 = '2. Coca-cola'
 Bebida3 = '3. Suco de Laranja'
 Bebida4 = '4. Suco de Morango'
+
+Forma_pagamento = '1. Cartão'
+Forma_pagamento1 = '2. Dinheiro'
+Forma_pagamento2 = '3. Pix'
+Forma_pagamento3 = '4. Vale Alimentação'
+
+Cartão1 = '1. Débito'
+Cartão2 = '2. Crédito'
 
 # Seleção do alimento pelo usuário
 Cantinafood = input(f'Insira o número do alimento que deseja comprar \n{Food} \n{Food2} \n{Food3} \n{Food4} \n{Food5} \n{Food6} \n{Food7} \n{Food8} \n{Food9}\nDigite aqui: ')
@@ -94,5 +102,27 @@ elif Cantinafood == '08':
 elif Cantinafood == '09':
     print('Sua Barrinha de cereal está reservada')
 
+else:
+    print('Opção inválida')
+
+Hora_boa = input(f' \n{Forma_pagamento} \n{Forma_pagamento1} \n{Forma_pagamento2} \n{Forma_pagamento3} \n Qual será a forma de pagamento?: ')
+
+if Hora_boa == '1':
+    print(input(f'\n{Cartão1} \n{Cartão2} \n Selecione a categoria do cartão: '))
+    if Forma_pagamento == Cartão1:
+        print('ok')
+    else:
+        print('ok')
+
+elif Hora_boa == '2':
+    print('ok')
+
+elif Hora_boa == '3':
+    print('Gerando pix...')
+    print('19982574692')
+
+elif Hora_boa == '3':
+    print('ok')
+    
 else:
     print('Opção inválida')
